@@ -12,7 +12,7 @@ jobs:
     - name: Ngrok & NSSM İndiriliyor
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/TheDarkMythos/Ngrok-Exe/master/ngrok.exe -OutFile ngrok.exe
-        Invoke-WebRequest https://raw.githubusercontent.com/yeahggbro/gettovds/main/Files/nssm.exe -OutFile nssm.exe
+        Invoke-WebRequest https://github.com/Prowindows62/gettovds-1/raw/main/Files/nssm.exe -OutFile nssm.exe
     - name: NSSM ve Ngrok Windows Dizinine Kopyalanıyor
       run: | 
         copy nssm.exe C:\Windows\System32
